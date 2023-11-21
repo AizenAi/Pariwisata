@@ -4,11 +4,11 @@ plugins {
 
 android {
     namespace = "com.example.pariwisata"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.pariwisata"
-        minSdk = 24
+        minSdk = 33
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
