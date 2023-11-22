@@ -12,12 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pariwisata"
         tools:targetApi="31">
-        <activity
-            android:name=".ProfilePage"
-            android:exported="false" />
-        <activity
-            android:name=".AboutApp"
-            android:exported="false" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".AboutApp" />
         <activity android:name=".formlogin" />
         <activity android:name=".MainActivity" />
         <activity
