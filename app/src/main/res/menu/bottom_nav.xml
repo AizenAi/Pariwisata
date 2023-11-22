@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_account"
         android:title="Profile"/>
     <item
-        android:id="@+id/about"
+        android:id="@+id/aboutboss"
         android:icon="@drawable/baseline_error"
         android:title="About"/>
 </menu>
