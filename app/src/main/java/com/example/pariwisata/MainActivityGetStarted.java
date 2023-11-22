@@ -15,12 +15,12 @@ public class MainActivityGetStarted extends AppCompatActivity {
 
 
 
-    public void btnLogin(View view) {
+    public void asjda(View view) {
         Intent intent = new Intent(MainActivityGetStarted.this, formlogin.class );
         startActivity(intent);
     }
 
-    public void pindah(View view) {
+    public void button(View view) {
         Intent intent = new Intent(MainActivityGetStarted.this, MainActivity.class);
         startActivity(intent);
     }
