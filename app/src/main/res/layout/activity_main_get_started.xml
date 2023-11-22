@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
     tools:context=".MainActivityGetStarted">
 
 
@@ -13,10 +12,8 @@
         android:id="@+id/button"
         android:layout_width="181dp"
         android:layout_height="61dp"
-        android:backgroundTint="@color/blue2"
+        android:backgroundTint="@color/biruMuda"
         android:text="Get Started"
-        android:textSize="20dp"
-        android:fontFamily="@font/pbold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,24 +51,10 @@
         android:gravity="center"
         android:text="Login"
         android:textStyle="bold"
-        android:fontFamily="@font/pbold"
-        android:textColor="@color/blue3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.624" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/pbold"
-        android:text="Welcome Traveler"
-        android:textColor="@color/blue4"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="337dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
