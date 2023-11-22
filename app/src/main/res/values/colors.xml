@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="biruMuda">#6495ED</color>
+    <color name="blue">#CBE4DE</color>
+    <color name="blue2">#0E8388</color>
+    <color name="blue3">#2E4F4F</color>
+    <color name="blue4">#2C3333</color>
 </resources>
