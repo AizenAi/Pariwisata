@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     tools:context=".ProfilePage">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -39,6 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="500dp"
         android:text="Upload"
+        android:fontFamily="@font/pbold"
+        android:backgroundTint="@color/blue2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
