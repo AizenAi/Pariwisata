@@ -13,26 +13,21 @@ import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.imageview.ShapeableImageView;
+
 public class ProfileFragment extends Fragment {
 
     private static final int PICK_IMAGE_REQUEST = 1000;
-    ImageView imageView;
-
+    ShapeableImageView shapeableImageView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
-        imageView = view.findViewById(R.id.image);
+        shapeableImageView = view.findViewById(R.id.imageU);
 
-        // Set layout parameters
-        ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
-        layoutParams.width = 500;
-        layoutParams.height = 500;
-        imageView.setLayoutParams(layoutParams);
-
-        Button button = view.findViewById(R.id.buttonUPL);
+        Button button = view.findViewById(R.id.imageupl);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +48,8 @@ public class ProfileFragment extends Fragment {
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK) {
             if (data != null) {
                 Uri selectedImageUri = data.getData();
-                imageView.setImageURI(selectedImageUri);
-                imageView.setTag(selectedImageUri);
+                shapeableImageView.setImageURI(selectedImageUri);
+                shapeableImageView.setTag(selectedImageUri);
             }
         }
     }
