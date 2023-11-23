@@ -8,13 +8,6 @@
     tools:context=".ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="320dp"
-        android:src="@drawable/desain_tanpa_judul__2__removebg_preview" />
 
     <ImageView
         android:id="@+id/image"
@@ -22,14 +15,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|center_horizontal"
         tools:src="@tools:sample/avatars"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="300dp"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="185dp"
+        android:layout_marginTop="100dp"
         android:text="Upload"
         android:backgroundTint="@color/blue2"
         android:id="@+id/buttonUPL"/>

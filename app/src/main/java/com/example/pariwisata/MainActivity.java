@@ -25,21 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageView = findViewById(R.id.navView);
-        ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
-        layoutParams.width = 500;
-        layoutParams.height = 500;
-        imageView.setLayoutParams(layoutParams);
-        Button button = findViewById(R.id.navView);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent iGallery = new Intent(Intent.ACTION_PICK);
-                iGallery.setData(MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                startActivity(iGallery);
-            }
-        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.navView);
         bottomNavigationView.setOnItemSelectedListener(item -> {
