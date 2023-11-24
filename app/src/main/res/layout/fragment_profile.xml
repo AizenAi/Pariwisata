@@ -6,43 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".ProfilePage">
 
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageU"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="162dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="37dp"
         android:padding="5dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/circular"
         app:srcCompat="@drawable/baseline_account_circle_24" />
 
+
     <ImageView
         android:id="@+id/btnCamera"
-        android:layout_width="37dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="360dp"
         android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/baseline_settings" />
 
-    <Button
-        android:id="@+id/imageupl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="500dp"
-        android:text="Upload"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="539dp"
+        android:backgroundTint="@color/biruMuda"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageU"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/imageupl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/corner"
+            android:backgroundTint="@color/blue2"
+            android:text="Upload"
+            app:layout_constraintTop_toBottomOf="@+id/imageU" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
