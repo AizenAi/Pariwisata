@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FavoriteFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/btnDalem"
+        android:layout_width="283dp"
+        android:layout_height="56dp"
+        android:background="@drawable/corner"
+        android:text="Dalam Negara"
+        android:onClick="pindahDalam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnLuar"
+        android:layout_width="283dp"
+        android:layout_height="56dp"
+        android:background="@drawable/corner"
+        android:text="Luar Negara"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/_4092491_jfiy_9mg3_220126_removebg_preview"
+        app:layout_constraintBottom_toTopOf="@+id/btnDalem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="410dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="403dp"
+            android:alpha="0.7"
+            android:src="@drawable/replicate_prediction_utlbzebbtlhyji65beqkxzl5ga" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
