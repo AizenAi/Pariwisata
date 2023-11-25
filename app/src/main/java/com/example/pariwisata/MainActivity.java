@@ -12,20 +12,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1000;
     ImageView imageView;
+    FirebaseAuth auth;
+    Button button;
+    TextView textView;
+    FirebaseAuth user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.navView);
         bottomNavigationView.setOnItemSelectedListener(item -> {

@@ -12,7 +12,7 @@
     tools:context=".formlogin">
 
     <TextView
-        android:text="@string/login"
+        android:text="@string/register"
         android:fontFamily="@font/pbold"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -35,13 +35,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/username"
+            android:hint="UserName"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordrgs"
             android:hint="Password"
             android:textColorHint="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
-
+    
     <ProgressBar
         android:id="@+id/progressBar"
         android:visibility="gone"
@@ -50,14 +60,15 @@
 
     <Button
         android:id="@+id/submit"
-        android:text="@string/sign_in"
+        android:text="@string/sign_up"
+        android:fontFamily="@font/pmed"
         android:backgroundTint="@color/blue2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
     <TextView
-        android:id="@+id/registerNow"
-        android:text="@string/click_to_register"
+        android:id="@+id/loginNow"
+        android:text="@string/click_to_login"
         android:fontFamily="@font/pmed"
         android:textColor="@color/white"
         android:textSize="16sp"

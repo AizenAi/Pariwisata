@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".ProfilePage">
@@ -20,44 +23,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/circular"
         app:srcCompat="@drawable/baseline_account_circle_24" />
-
     <Button
         android:id="@+id/imageupl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="500dp"
         android:text="Upload"
         android:fontFamily="@font/pbold"
-        android:backgroundTint="@color/blue2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageU"
-        app:layout_constraintVertical_bias="0.0" />
-
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue2" />
     <TextView
         android:id="@+id/gettext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Rafi Khairul Afnan"
+        android:gravity="center"
+        android:text="Guest"
         android:fontFamily="@font/pbold"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageupl" />
-    <TextView
-        android:id="@+id/gettext2"
-        android:layout_width="match_parent"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="rafikhoriul65@gmail.com"
-        android:textColor="@color/white"
+        android:text="LogOut"
         android:fontFamily="@font/pbold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gettext" />
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue2"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
