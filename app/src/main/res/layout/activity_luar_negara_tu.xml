@@ -4,30 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dalamnegara2">
+    tools:context=".LuarNegaraTU">
 
     <androidx.cardview.widget.CardView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginTop="290dp"
         app:cardCornerRadius="30dp"
-        android:layout_marginLeft="160dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        android:layout_marginBottom="100dp"
+        tools:ignore="MissingConstraints" >
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="18dp"
+            android:textSize="25dp"
             android:layout_marginTop="10dp"
-            android:text="Pura Uluwatu"
+            android:layout_marginLeft="17dp"
             android:textAlignment="center"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:text="Pulau Udo" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -35,7 +31,6 @@
         android:layout_width="410dp"
         android:layout_height="300dp"
         app:cardCornerRadius="30dp"
-        android:layout_marginTop="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -54,12 +49,12 @@
             android:text="Location" />
 
         <TextView
-            android:layout_width="330dp"
-            android:layout_height="120dp"
-            android:layout_marginLeft="40dp"
+            android:layout_width="360dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/pmed"
-            android:text="Pura Uluwatu terletak pada ketinggian 97 meter dari permukaan laut. Di depan pura terdapat hutan kecil yang disebut alas kekeran, berfungsi sebagai penyangga kesucian pura."
+            android:text="Pulau Udo adalah sebuah pulau yang terletak di Kabupaten Jeju Utara, Provinsi Jeju. Wilayah Udo merupakan tempat wisata memancing, bersepeda dan hiking yang terkenal di Korea Selatan."
             android:textAlignment="center"
             android:textSize="17dp" />
 
@@ -76,15 +71,13 @@
     </androidx.cardview.widget.CardView>
 
 
-
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
-        android:layout_width="410dp"
+        android:layout_width="412dp"
         android:layout_height="470dp"
         android:background="@drawable/kornerrr"
         android:scaleType="centerCrop"
-        android:src="@drawable/baliiiiid"
+        android:src="@drawable/udo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
