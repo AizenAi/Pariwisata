@@ -6,4 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".ActivityLuarNegara">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        android:layout_marginBottom="100dp"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="17dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Tokyo Disneyland" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/pindahGmaps"
+            android:layout_width="168dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/corner"
+            android:text="Location" />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/pmed"
+            android:text="Disneyland Tokyo adalah taman rekreasi Disneyland dengan luas mencapai 465,000 m² dan merupakan taman rekreasi dan resort Disney pertama yang dibangun di luar Amerika. Dibangun oleh Walt Disney Imagineering, taman rekreasi ini dibuat mirip dengan Disneyland yang terletak di Anaheim, California."
+            android:textAlignment="center"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="57dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/corner"
+            android:onClick="pindahketu"
+            app:srcCompat="@drawable/baseline_navigate_next_24" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="412dp"
+        android:layout_height="470dp"
+        android:background="@drawable/kornerrr"
+        android:scaleType="centerCrop"
+        android:src="@drawable/disney"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/welowelo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

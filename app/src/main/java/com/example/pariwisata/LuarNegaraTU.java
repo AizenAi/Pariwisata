@@ -8,13 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
-public class ActivityDalamNegara extends AppCompatActivity {
+public class LuarNegaraTU extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dalam_negara);
+        setContentView(R.layout.activity_luar_negara_tu);
         Button searchButtonn = findViewById(R.id.pindahGmaps);
 
 
@@ -22,7 +21,7 @@ public class ActivityDalamNegara extends AppCompatActivity {
             @Override
             public void onClick(View    view) {
                 String url = "https://www.google.com/maps/search/";
-                String u = "Raja Ampat";
+                String u = "Pulau Udo ";
                 String keyword = url + u;
                 Intent searchIntent = new Intent(Intent.ACTION_VIEW);
 
@@ -33,8 +32,8 @@ public class ActivityDalamNegara extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-    public void pindahketu(View view) {
-        Intent i = new Intent(ActivityDalamNegara.this, dalamnegara2.class);
+    public void pindahkeone(View view) {
+        Intent i = new Intent(LuarNegaraTU.this, ActivityLuarNegara.class);
         startActivity(i);
     }
 }

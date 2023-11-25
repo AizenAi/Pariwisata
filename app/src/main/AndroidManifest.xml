@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Pariwisata"
         tools:targetApi="31">
         <activity
+            android:name=".LuarNegaraTU"
+            android:exported="false" />
+        <activity
+            android:name=".luarnegara2"
+            android:exported="false" />
+        <activity
             android:name=".dalamnegara2"
             android:exported="false" />
         <activity
